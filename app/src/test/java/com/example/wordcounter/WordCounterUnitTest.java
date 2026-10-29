@@ -50,4 +50,20 @@ public class WordCounterUnitTest {
 
         assertEquals(expectedResult,actualResult);
     }
+    @Test
+    public void getSpecCount_Test6_specChar() {
+        String inputValue= "  ";
+        int expectedResult=2;
+        int actualResult=Counter.getSpecCount(inputValue);
+
+        assertEquals(expectedResult,actualResult);
+    }
+    @Test
+    public void getSpecCount_Test7_specChar() {
+        String inputValue = "Labas pasauli";
+        int expectedResult = 2;
+        int actualResult = Counter.getWordCount(inputValue);
+
+        assertEquals(expectedResult, actualResult);
+    }
 }
